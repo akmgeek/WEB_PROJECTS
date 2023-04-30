@@ -1,4 +1,4 @@
-body{
+html, body{
     margin: 0;
     padding: 0;
     /* body { */
@@ -9,15 +9,14 @@ body{
 
 
 
-/* .row{
-    
-    background: linear-gradient(to bottom right, #0099ff, #66ccff);
-        
+/* div{
+    border: 1px solid black;
 } */
 .main-container{
     border: 1px solid black;
     /* background-color: black; */
-    height: 100vh;
+    /* height: 100vh; */
+    overflow-y: auto;
     display: inline-block;
 }
 
@@ -32,3 +31,12 @@ button.img{
     height: 8px;
     width: 8px;
 }
+
+
+#current-temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vw; /* or any other value that suits your needs */
+    height: 100%;
+  }

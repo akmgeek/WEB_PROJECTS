@@ -23,67 +23,30 @@
     ></script>
   </head>
 
+  <script src="script.js"></script>
   <body>
-    <script src="script.js"></script>
-
-    <!-- <h1>Weather Application</h1> -->
-
-    <section style="height: 100vh; background-color: green">
-      <div class="row vh-100">
-        <div class="col-sm-6">
-          <div class="card h-100">
-            <div class="card shadow">
-              <div class="card-body">
-                <!-- country and city info -->
-                <div class="row">
-                  <div class="col">
-                    <h5 id="city-name" class="card-title"></h5>
-                  </div>
-                  <div class="col">
-                    <div class="row">
-                      <div class="col">
-                        <input
-                          class="form-control"
-                          type="search"
-                          placeholder="Search"
-                          aria-label="Search"
-                        />
-                      </div>
-                      <div class="col">
-                        <button type="submit">
-                          <img src="icons/search.png" alt="">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <h6 id="country-name"></h6>
-                </div>
-
-                <!-- second row : temperature and someting about weather -->
-                <div class="row">
-                  <div class="col"><h1 id="current-temp"></h1></div>
-                  <div class="col">some animation</div>
-                </div>
-                <p id="condition-text" class="card-text">About wheter .....</p>
-              </div>
-            </div>
+    <!-- main container -->
+    <div class="container-fluid bg-info border" style="height: 100vh">
+      <!-- row -->
+      <div class="row bg-warning" style="height: 100%">
+        <!-- col 1 -->
+        <div class="col-sm-6 bg-dark text-white">
+          <div class="row border border-primary" style="height: 10%;"><h2 id="city-name"></h2></div>
+          <div class="row border border-primary" style="height: 60%;"><h1 id="current-temp"></h1></div>
+          <div class="row border border-primary" style="height: 20%;"><h6 id="condition-text"></h6></div>
+          <div class="row border border-primary" style="height: 10%;">
+            <div class="col"><h6 id="country-name"></h6></div>
+            <div class="col"></div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div
-            class="card h-100"
-            style="border: 1px solid white; background-color: black"
-          >
-            <div class="card-body" style="height: 100vh">
-              <h5 class="card-title"></h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary"></a>
-            </div>
-          </div>
+        <!-- col 2 -->
+        <div class="col-sm-6 bg-light">
+          <div class="row border border-primary">child row 1</div>
+          <div class="row border border-primary">child row 2</div>
+          <div class="row border border-primary">child row 3</div>
+          <div class="row border border-primary">child row 4</div>
         </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>
